@@ -5,12 +5,12 @@
 Summary:	Extended Module Player library
 Summary(pl.UTF-8):	Biblioteka XMP (Extended Module Player)
 Name:		libxmp
-Version:	4.4.1
+Version:	4.5.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://downloads.sourceforge.net/xmp/%{name}-%{version}.tar.gz
-# Source0-md5:	3a2afcbbb720fb2931e79aeb66e724f7
+Source0:	https://downloads.sourceforge.net/xmp/%{name}-%{version}.tar.gz
+# Source0-md5:	b659f9303e972ffe790d0f2a33951c92
 URL:		http://xmp.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
