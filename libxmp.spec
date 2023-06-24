@@ -5,13 +5,13 @@
 Summary:	Extended Module Player library
 Summary(pl.UTF-8):	Biblioteka XMP (Extended Module Player)
 Name:		libxmp
-Version:	4.5.0
+Version:	4.6.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	https://downloads.sourceforge.net/xmp/%{name}-%{version}.tar.gz
-# Source0-md5:	b659f9303e972ffe790d0f2a33951c92
-URL:		http://xmp.sourceforge.net/
+# Source0-md5:	fe12066dab71bc8656e6dd5985760b0c
+URL:		https://xmp.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -65,10 +65,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-# omitted from install target; DOCS= to omit rst->man processing with missing file
+# omitted from install target
 %{__make} install-docs \
 	DESTDIR=$RPM_BUILD_ROOT \
-	DOCS= \
 	INSTALL_DATA="cp -p"
 
 %clean
@@ -88,6 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libxmp.so
 %{_includedir}/xmp.h
 %{_pkgconfigdir}/libxmp.pc
+%{_libdir}/cmake/libxmp
 %{_mandir}/man3/libxmp.3*
 
 %if %{with static_libs}
