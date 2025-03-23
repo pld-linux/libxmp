@@ -1,16 +1,16 @@
 #
 # Conditional build:
-%bcond_without	static_libs	# don't build static libraries
+%bcond_without	static_libs	# static library
 #
 Summary:	Extended Module Player library
 Summary(pl.UTF-8):	Biblioteka XMP (Extended Module Player)
 Name:		libxmp
-Version:	4.6.0
+Version:	4.6.2
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	https://downloads.sourceforge.net/xmp/%{name}-%{version}.tar.gz
-# Source0-md5:	fe12066dab71bc8656e6dd5985760b0c
+# Source0-md5:	522c68630de6c3cae696225773621c5c
 URL:		https://xmp.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
